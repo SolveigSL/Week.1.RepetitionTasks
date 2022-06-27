@@ -7,25 +7,34 @@ namespace Week._1.RepetitionTasks
     {
         static void Main(string[] args)
         {
-            // //Oppgave 1 
-            // Console.WriteLine("Hello World");
+            ////Oppgave 1 
+            //Console.WriteLine("Hello World");
 
-            // Console.WriteLine("What is your name?");
+            //Console.WriteLine("What is your name?");
             //string name = Console.ReadLine();
 
-            // if (name == "Solveig")
-            // {
-            //     Console.WriteLine("Hey you!");
-            // }
+            //if (name == "Solveig")
+            //{
+            //    Console.WriteLine("Hey you!");
+            //}
 
-            // else
-            // {
-            //     for (int i = 0; i <= 10; i++)
-            //     {
-            //         Console.WriteLine(name);
-            //     }
+            //else
+            //{
+            //    var teller = 0;
 
-            // }
+            //    while (teller < 10)
+            //    {
+            //        teller++;
+            //        Console.WriteLine(name);
+            //    }
+
+            //    Bare bruk en loop
+            //    for (int i = 0; i <= 10; i++)
+            //    {
+            //        Console.WriteLine(name);
+            //    }
+
+            //}
 
             //OPPGAVE 2
             //Console.WriteLine("Hello, please write your name");
@@ -121,57 +130,71 @@ namespace Week._1.RepetitionTasks
 
             //OPPGAVE 5
 
-            try
+            // try
+            // {
+            //     Console.WriteLine("Skriv inn et tall mellom 1 og 100");
+            //     int answer = Convert.ToInt32(Console.ReadLine());
+
+            //     if (answer < 1 || answer > 100)
+            //     {
+            //         Console.WriteLine("Skriv inn et tall melom 1-100");
+            //     }
+
+            //     while (answer > 1 && answer < 100)
+            //     {
+
+            //         answer++;
+
+            //         Console.WriteLine(answer);
+
+            //         if (answer > 99)
+            //         {
+            //             break;
+            //         }
+            //}    }
+
+            // catch (Exception e)
+            // {
+            //     Console.WriteLine("Feil tall");
+
+            // }
+
+            //OPPGAVE 6
+
+
+            while (true)
             {
-                Console.WriteLine("Skriv inn et tall mellom 1 og 100");
-                int answer = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(" MENY ");
+                Console.WriteLine("1. Sett inn penger");
+                Console.WriteLine("2. Ta ut penger");
+                Console.WriteLine("3. Sjekk saldo");
+                Console.WriteLine("4. EXIT");
 
-                if (answer < 1 || answer > 100)
+                var answer = Convert.ToInt32(Console.ReadLine());
+
+                switch (answer)
                 {
-                    Console.WriteLine("Skriv inn et tall melom 1-100");
-                }
-
-                while (answer > 1 && answer < 100)
-                {
-
-                    answer++;
-
-                    Console.WriteLine(answer);
-
-                    if (answer > 99)
-                    {
+                    case 1:
+                        Console.WriteLine("Her kan du sette inn penger");
                         break;
-                    }
-           }    }
 
-            catch (Exception e)
-            {
-                Console.WriteLine("Feil tall");
-  
+                    case 2:
+                        Console.WriteLine("Her kan du ta ut penger");
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Her kan du sjekke saldo");
+                        break;
+
+                    case 4:
+                        
+                        Console.WriteLine("Du har avsluttet menyen. Hade!");
+                        break;
+                }  
             }
-        }
-          
-
             
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
+        }
 
     }
 }
